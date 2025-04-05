@@ -53,23 +53,16 @@ jupyter notebook
 
 ---
 
-## 🚀 How to Explore or Contribute
+## 🔍 What We’ve Found So Far
 
-If you're interested in working on this project:
+Throughout the project, we compared how viewers engage with a video through likes/dislikes versus how they express their opinions in the comments. Using TextBlob and a custom-trained sentiment model, we analyzed thousands of YouTube comments and matched them with engagement metrics.
 
-- Open any notebook in the `notebooks/` folder to follow the full workflow
-- Explore the dataset and visualizations to gain insights
-- Improve the sentiment model or experiment with new techniques
-- Add new videos or comments to test model predictions
-- Fork the repository or open a pull request with new ideas or features
+Here are a few things we've discovered:
 
-This project is collaborative and open to contributions from others.
+- Videos can have **perfect like/dislike ratios** but **entirely negative comment sentiment**, showing a clear disconnect between public engagement and written feedback.
+- Many viewers are more likely to **comment their thoughts** than to leave a dislike. Dislikes are underused, while negative feedback often shows up in comments.
+- The **TextBlob** model provided a solid starting point, but our **trained model** captured sentiment much more accurately, especially in informal or sarcastic comments.
+- We found that the correlation between like/dislike ratio and comment sentiment is **weak (around 0.28)**, meaning public engagement and viewer opinion often tell **different stories**.
+- Visualizations like scatterplots helped identify outlier videos where the numbers don’t match the tone, highlighting interesting case studies for further review.
 
----
-
-## 📦 Dataset Info
-
-- Original dataset source (Kaggle): https://www.kaggle.com/datasnaek/youtube
-- Files include `USvideos.csv` and `UScomments.csv`
-- These files are stored locally in the `datasets/` folder and are too large to view directly on GitHub
-- You can open them using Python (e.g. `pandas.read_csv()`) or any text editor
+These findings suggest that sentiment analysis offers a deeper look into how people really feel about content — far beyond just likes and views.
