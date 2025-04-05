@@ -13,7 +13,6 @@ We started by labeling sentiment using a basic tool called TextBlob, which looks
 - `requirements.txt` – List of Python packages used in the project.
 
 ---
-
 ## 🛠️ Setup Instructions (Mac/Linux/Windows)
 
 ### 1. Clone the repository
@@ -46,17 +45,3 @@ bash
 Copy
 Edit
 jupyter notebook
-🚀 How to Explore or Contribute
-If you're interested in working on this project:
-
-Open any notebook in the notebooks/ folder to follow the full workflow
-
-Explore the dataset and visualizations to gain insights
-
-Improve the sentiment model or experiment with new techniques
-
-Add new videos or comments to test model predictions
-
-Fork the repository or open a pull request with new ideas or features
-
-This project is collaborative and open to contributions from others.
