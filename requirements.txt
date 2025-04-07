@@ -10,3 +10,4 @@ textblob
 tqdm
 jupyter
 spacy
+lightgbm
