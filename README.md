@@ -71,7 +71,7 @@ Here are the key findings:
 
 - Many videos show a **clear mismatch between comment sentiment and like/dislike ratios**, suggesting that user engagement alone doesn’t reflect audience opinion.
 - Users often leave **highly negative comments on videos with overwhelmingly positive engagement**, which highlights how comments can reveal hidden discontent or controversy.
-- Our final sentiment model using **MiniLM + Logistic Regression** predicted individual comment sentiment with strong accuracy — up to **0.97** on large datasets and **0.80+** on smaller video samples.
+- Our final sentiment model using **MiniLM + Logistic Regression** predicted individual comment sentiment with strong accuracy — up to **0.99** on large datasets and **0.80+** on smaller video samples with the help of embeddings.
 - The **TextBlob** model helped generate initial sentiment labels quickly, but it struggled with sarcasm, informal language, or subtle tone shifts. Our custom model handled these much better.
 - We also built a function to test individual comments from real videos, giving us a powerful tool to assess sentiment at a **comment-by-comment level**.
 - By generating a **comment sentiment ratio** per video, we were able to compare it directly with like/dislike data — and found that the correlation between them remains **weak (around 0.28)**.
