@@ -65,14 +65,16 @@ jupyter notebook
 
 ## 🔍 What We’ve Found So Far
 
-Throughout the project, we compared how viewers engage with a video through likes/dislikes versus how they express their opinions in the comments. Using TextBlob and a custom-trained sentiment model, we analyzed thousands of YouTube comments and matched them with engagement metrics.
+Throughout the project, we explored how YouTube comments reflect viewer sentiment and how that compares to public engagement metrics like likes and dislikes. We began with TextBlob to label sentiment, but later upgraded to a more accurate machine learning pipeline using MiniLM sentence embeddings and a logistic regression classifier.
 
-Here are a few things we've discovered:
+Here are the key findings:
 
-- Videos can have **perfect like/dislike ratios** but **entirely negative comment sentiment**, showing a clear disconnect between public engagement and written feedback.
-- Many viewers are more likely to **comment their thoughts** than to leave a dislike. Dislikes are underused, while negative feedback often shows up in comments.
-- The **TextBlob** model provided a solid starting point, but our **trained model** captured sentiment much more accurately, especially in informal or sarcastic comments.
-- We found that the correlation between like/dislike ratio and comment sentiment is **weak (around 0.28)**, meaning public engagement and viewer opinion often tell **different stories**.
-- Visualizations like scatterplots helped identify outlier videos where the numbers don’t match the tone, highlighting interesting case studies for further review.
+- Many videos show a **clear mismatch between comment sentiment and like/dislike ratios**, suggesting that user engagement alone doesn’t reflect audience opinion.
+- Users often leave **highly negative comments on videos with overwhelmingly positive engagement**, which highlights how comments can reveal hidden discontent or controversy.
+- Our final sentiment model using **MiniLM + Logistic Regression** predicted individual comment sentiment with strong accuracy — up to **0.97** on large datasets and **0.80+** on smaller video samples.
+- The **TextBlob** model helped generate initial sentiment labels quickly, but it struggled with sarcasm, informal language, or subtle tone shifts. Our custom model handled these much better.
+- We also built a function to test individual comments from real videos, giving us a powerful tool to assess sentiment at a **comment-by-comment level**.
+- By generating a **comment sentiment ratio** per video, we were able to compare it directly with like/dislike data — and found that the correlation between them remains **weak (around 0.28)**.
 
-These findings suggest that sentiment analysis offers a deeper look into how people really feel about content — far beyond just likes and views.
+Overall, sentiment analysis gives us a much deeper and more nuanced view of audience feedback than engagement metrics alone.
+
