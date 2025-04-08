@@ -53,6 +53,16 @@ jupyter notebook
 
 ---
 
+## 📓 Notebooks Overview
+
+- `eda_analysis_eli.ipynb` – Focused on comment sentiment trends and compared sentiment ratios with like/dislike ratios across videos.
+- `eda_analysis_fonz.ipynb` – Cleaned and explored engagement metrics, and checked for outliers or inconsistent data patterns.
+- `eda_analysis_jeel.ipynb` – Ran multiple hypothesis tests, including checking the correlation between sentiment and engagement.
+- `eda_analysis_laura (2).ipynb` – Continued work on feature engineering and summary statistics.
+- `eda_sda_analysis_jeel.ipynb` – Added statistical data analysis with labeled graphs to interpret key findings.
+
+---
+
 ## 🔍 What We’ve Found So Far
 
 Throughout the project, we compared how viewers engage with a video through likes/dislikes versus how they express their opinions in the comments. Using TextBlob and a custom-trained sentiment model, we analyzed thousands of YouTube comments and matched them with engagement metrics.
