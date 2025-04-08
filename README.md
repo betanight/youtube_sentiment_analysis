@@ -63,7 +63,7 @@ jupyter notebook
 
 ---
 
-## 🔍 What We found out
+## 🔍 What We Found Out
 
 Throughout the project, we explored how YouTube comments reflect viewer sentiment and how that compares to public engagement metrics like likes and dislikes. We began with TextBlob to label sentiment, but later upgraded to a more accurate machine learning pipeline using MiniLM sentence embeddings and a logistic regression classifier.
 
