@@ -55,8 +55,8 @@ jupyter notebook
 
 ## 📓 Notebooks Overview
 
-- `eda_analysis_eli.ipynb` – Focused on comment sentiment trends and compared sentiment ratios with like/dislike ratios across videos.
-- `eda_analysis_fonz.ipynb` – Cleaned and explored engagement metrics, and checked for outliers or inconsistent data patterns.
+- `eda_analysis_eli.ipynb` – Focused on modeling and getting a correct sentiment response for individual comments.
+- `eda_analysis_fonz.ipynb` – Focused on testing multiple models to find the most accurate one for our project.
 - `eda_analysis_jeel.ipynb` – Ran multiple hypothesis tests, including checking the correlation between sentiment and engagement.
 - `eda_analysis_laura (2).ipynb` – Continued work on feature engineering and summary statistics.
 - `eda_sda_analysis_jeel.ipynb` – Added statistical data analysis with labeled graphs to interpret key findings.
