@@ -92,6 +92,6 @@ This chart compares different machine learning models tested for accuracy on pre
 
 ### 🔹 Sentiment Breakdown per Video (From Eli's Notebook)
 
-![Sentiment Breakdown](images/eli_sentiment_breakdown.jpg)
+![Sentiment Breakdown]()
 
 This visualization highlights how sentiment varies across individual videos, even when engagement ratios appear positive.
