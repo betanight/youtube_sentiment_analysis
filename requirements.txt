@@ -11,3 +11,5 @@ tqdm
 jupyter
 spacy
 lightgbm
+google-api-python-client
+python-dotenv
