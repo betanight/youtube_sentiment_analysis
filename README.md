@@ -86,12 +86,12 @@ To support our findings, here are some examples of visual sentiment patterns pul
 
 ### 🔹 Model Comparison (From Fonz's Notebook)
 
-![Model Comparison](/Users/betaknight/fonz_multi_model.png)
+![Model Comparison](images/fonz_model_comparison.png)
 
 This chart compares different machine learning models tested for accuracy on predicting comment sentiment. It helped us decide to move forward with MiniLM + Logistic Regression.
 
 ### 🔹 Sentiment Breakdown per Video (From Eli's Notebook)
 
-![Sentiment Breakdown](/Users/betaknight/Library/Containers/com.apple.share.System.add-to-iphoto/Data/tmp/Image 4-8-25 at 4.05 PM.jpg)
+![Sentiment Breakdown](images/eli_sentiment_breakdown.jpg)
 
 This visualization highlights how sentiment varies across individual videos, even when engagement ratios appear positive.
