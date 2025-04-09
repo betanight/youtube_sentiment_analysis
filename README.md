@@ -53,16 +53,45 @@ jupyter notebook
 
 ---
 
-## 🔍 What We’ve Found So Far
+## 📓 Notebooks Overview
 
-Throughout the project, we compared how viewers engage with a video through likes/dislikes versus how they express their opinions in the comments. Using TextBlob and a custom-trained sentiment model, we analyzed thousands of YouTube comments and matched them with engagement metrics.
+- `eda_analysis_eli.ipynb` – Focused on modeling and getting a correct sentiment response for individual comments.
+- `eda_analysis_fonz.ipynb` – Focused on testing multiple models to find the most accurate one for our project.
+- `eda_analysis_jeel.ipynb` – Ran multiple hypothesis tests, including checking the correlation between sentiment and engagement.
+- `eda_analysis_laura (2).ipynb` – Continued work on feature engineering and summary statistics.
+- `eda_sda_analysis_jeel.ipynb` – Added statistical data analysis with labeled graphs to interpret key findings.
 
-Here are a few things we've discovered:
+---
 
-- Videos can have **perfect like/dislike ratios** but **entirely negative comment sentiment**, showing a clear disconnect between public engagement and written feedback.
-- Many viewers are more likely to **comment their thoughts** than to leave a dislike. Dislikes are underused, while negative feedback often shows up in comments.
-- The **TextBlob** model provided a solid starting point, but our **trained model** captured sentiment much more accurately, especially in informal or sarcastic comments.
-- We found that the correlation between like/dislike ratio and comment sentiment is **weak (around 0.28)**, meaning public engagement and viewer opinion often tell **different stories**.
-- Visualizations like scatterplots helped identify outlier videos where the numbers don’t match the tone, highlighting interesting case studies for further review.
+## 🔍 What We Found Out
 
-These findings suggest that sentiment analysis offers a deeper look into how people really feel about content — far beyond just likes and views.
+Throughout the project, we explored how YouTube comments reflect viewer sentiment and how that compares to public engagement metrics like likes and dislikes. We began with TextBlob to label sentiment, but later upgraded to a more accurate machine learning pipeline using MiniLM sentence embeddings and a logistic regression classifier.
+
+Here are the key findings:
+
+- Many videos show a **clear mismatch between comment sentiment and like/dislike ratios**, suggesting that user engagement alone doesn’t reflect audience opinion.
+- Users often leave **highly negative comments on videos with overwhelmingly positive engagement**, which highlights how comments can reveal hidden discontent or controversy.
+- Our final sentiment model using **MiniLM + Logistic Regression** predicted individual comment sentiment with strong accuracy — up to **0.99** on large datasets and **0.80+** on smaller video samples with the help of embeddings.
+- The **TextBlob** model helped generate initial sentiment labels quickly, but it struggled with sarcasm, informal language, or subtle tone shifts. Our custom model handled these much better.
+- We also built a function to test individual comments from real videos, giving us a powerful tool to assess sentiment at a **comment-by-comment level**.
+- By generating a **comment sentiment ratio** per video, we were able to compare it directly with like/dislike data — and found that the correlation between them remains **weak (around 0.28)**.
+
+Overall, sentiment analysis gives us a much deeper and more nuanced view of audience feedback than engagement metrics alone.
+
+---
+
+## 📊 Sample Visualizations
+
+To support our findings, here are some examples of visual sentiment patterns pulled directly from our exploratory notebooks.
+
+### 🔹 Model Comparison (From Fonz's Notebook)
+
+![Model Comparison](images/fonz_model_comparison.png)
+
+This chart compares different machine learning models tested for accuracy on predicting comment sentiment. It helped us decide to move forward with MiniLM + Logistic Regression.
+
+### 🔹 Sentiment Breakdown per Video (From Eli's Notebook)
+
+![Sentiment Breakdown](images/eli_sentiment_breakdown.png)
+
+This visualization highlights how sentiment varies across individual videos, even when engagement ratios appear positive.
