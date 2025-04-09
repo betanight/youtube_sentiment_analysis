@@ -97,3 +97,21 @@ This chart compares different machine learning models tested for accuracy on pre
 ![Sentiment Breakdown](images/eli_sentiment_breakdown.png)
 
 This visualization highlights how sentiment varies across individual videos, even when engagement ratios appear positive.
+
+---
+
+## Where to find the completion of each task(For reviewers):
+
+1. Task one: Make a detailed analysis and assessment of the relationship between comments and
+like-to-dislike ratio:
+
+The analysis can be found in both of Jeel's notebooks, both have her name at the end of the file name. 
+
+2. Task two: Train a machine learning model to predict the sentiment of a single comment:
+
+The completion of this can be found at the end of Eli's notebook
+
+3. Task three: Use the trained machine learning model to go through video(s) comments and make a
+positive-to-negative comment ratio.
+
+The comparison can be found in Fonz's noteboook
