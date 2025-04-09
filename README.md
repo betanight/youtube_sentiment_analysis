@@ -59,7 +59,7 @@ jupyter notebook
 
 - `comment_sentiment_eli.ipynb` – Focused on predicting sentimenality of specific comments(found at the end of the notebook).
 - `multiple_models_fonz.ipynb` – Focused on testing multiple models to find the most accurate one for our project. As well as comment sentiment ratio per video.
-- `eda_analysis_laura.ipynb` – Continued work on feature engineering and summary statistics.
+- `sentiment_analysis_laura.ipynb` – Continued work on feature engineering and summary statistics.
 - `eda_sda_analysis_jeel.ipynb` – Added statistical data analysis with labeled graphs to interpret key findings.
 
 ---
