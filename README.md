@@ -58,7 +58,7 @@ jupyter notebook
 - `eda_analysis_eli.ipynb` – Focused on modeling and getting a correct sentiment response for individual comments.
 - `eda_analysis_fonz.ipynb` – Focused on testing multiple models to find the most accurate one for our project.
 - `eda_analysis_jeel.ipynb` – Ran multiple hypothesis tests, including checking the correlation between sentiment and engagement.
-- `eda_analysis_laura (2).ipynb` – Continued work on feature engineering and summary statistics.
+- `eda_analysis_laura.ipynb` – Continued work on feature engineering and summary statistics.
 - `eda_sda_analysis_jeel.ipynb` – Added statistical data analysis with labeled graphs to interpret key findings.
 
 ---
